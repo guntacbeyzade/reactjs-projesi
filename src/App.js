@@ -1,25 +1,30 @@
 import logo from './logo.svg';
+import React from 'react'
 import './App.css';
 
+import { Route,Routes } from 'react-router-dom'
+import Countries from './components/Countries';
+import CountryDetails from './components/CountryDetails';
+import ExampleMemo from './components/ExampleMemo';
+
 function App() {
+  console.log("app çalişti...1")
+  
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+      <>
+      {/*<div><ExampleMemo /></div>*/}
+      <Routes>
+      <Route  path='/' element={<Countries/>} exact/>
+      <Route path='/country-details/:area' element={<CountryDetails/>}/>
+      </Routes>
+      </>
+    
+    
   );
 }
 
-export default App;
+//export default React.memo(App);
+export default (App);
+
