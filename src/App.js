@@ -10,6 +10,7 @@ import CommitTry from './components/CommitTry';
 
 function App() {
   console.log("app çalişti...1")
+  console.log("Task-2")
   return (
       <>
       <CommitTry />
@@ -18,6 +19,7 @@ function App() {
       <Route  path='/' element={<Countries/>} exact/>
       <Route path='/country-details/:area' element={<CountryDetails/>}/>
       </Routes>
+      { console.log("Task-2")} 
       </>
   );
 }
