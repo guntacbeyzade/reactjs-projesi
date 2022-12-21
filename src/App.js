@@ -11,9 +11,7 @@ import CommitTry from './components/CommitTry';
 function App() {
   console.log("app çalişti...1")
   console.log("Task-2")
-  
   return (
-    
       <>
       <CommitTry />
       {/*<div><ExampleMemo /></div>*/}
@@ -23,8 +21,6 @@ function App() {
       </Routes>
       { console.log("Task-2")} 
       </>
-    
- 
   );
 }
 
